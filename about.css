@@ -1,0 +1,463 @@
+/*General*/
+body {
+    background: #4b379a;
+    padding: 6rem 0;
+}
+
+.overflow{
+    overflow-x: hidden;
+    scroll-behavior: none;
+}
+
+.main-container{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+::selection{
+    background: rgb(180, 180, 180);
+    color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main-container {
+        width: 95%;
+    }
+
+    body {
+        background: #4b379a;
+        padding: 3rem 0;
+    }
+}
+
+/*Navbar*/
+.secondContainer{
+    background-image: url(./image/myPhoto.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    margin: auto;
+}
+
+.NavbarName{
+    width: 455px;
+    margin: 0 0 0 130px;
+}
+
+.nav-btn{
+    border: none;
+    background-color: transparent;
+}
+
+.nav-btn svg {
+    margin: 0 130px 0 0;
+}
+
+.offcanvas-body{
+    background-image: -webkit-linear-gradient(0deg, rgb(136 123 255) 0%, rgb(219 110 255) 100%);
+
+}
+
+.nav-link{
+    color: #fff;
+
+}
+
+.search-btn {
+    color: white;
+    border: 1px solid #b9b6b6;
+}
+
+.search-btn:hover{
+    color: #fff;
+    background-image: -webkit-linear-gradient(0deg, rgb(136 123 255) 0%, rgb(219 110 255) 100%);
+    border: 1px solid #fff;
+}
+
+@media screen and (max-width: 1510px) {
+    .secondContainer{
+        height: 650px;
+    } 
+}
+
+@media screen and (max-width: 1400px) {
+    .NavbarName{
+        margin: 0;
+    }
+
+    .nav-btn svg {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .NavbarName{
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 520px){
+.NavbarName {
+    width: 240px;
+}
+}
+
+@media screen and (max-width: 420px){
+    .NavbarName {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .nav-btn svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 40px 0 0 0;
+    }
+}
+
+/*Home*/
+.home-title-1{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase !important;
+    text-align: center;
+    padding: 150px 0 0 0;
+}
+
+.home-title-2{
+    font-family: "Poppins", sans-serif;
+    font-size: 120px;
+    font-weight:500;
+    line-height: 1.25em;
+    color: #fff;
+    text-align: center
+
+}
+
+.home-btn{
+    width: 170px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: auto;  
+    transition: all 0.3s ease 0s;
+    cursor: context-menu;
+}
+
+.home-btn:hover{
+    background-image: -webkit-linear-gradient(0deg, rgb(50, 36, 176) 0%, rgb(190, 94, 222) 100%);
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .home-title-2 {
+        font-size: 96px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .home-title-1 {
+        padding: 210px 0 20px 0;
+    }
+
+    .home-title-2 {
+        font-size: 50px;
+        padding-bottom:20px;
+    } 
+}
+
+@media screen and (max-width: 350px) {
+    .home-title-1 {
+        padding: 210px 0 20px 0;
+    }
+
+    .home-title-2 {
+        font-size: 40px;
+        padding-bottom:20px;
+    } 
+
+    .secondContainer {
+        height: 570px;
+    }
+}
+
+
+/*resume*/
+.resume{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding: 50px;
+}
+
+.personal-info-div{
+    width: 280px;
+    height: auto;
+    background-color: rgb(233 233 233);
+    padding: 10px 10px;
+}
+
+.resume-img{
+    width: 260px;
+    height: auto;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+}
+
+
+.resume-title{
+    padding: 15px 0 0 0;
+    font-size: 19px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 5px;
+}
+
+.personal-info-txt-div hr{
+    width: 260px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.info-list li{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+}
+
+.info-list li span{
+    font-weight: 400;
+}
+
+.resumeSecond-title{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+
+.resumeSecond-txt{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+
+.resumeSecond-txt-2{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+.resumeSecond-txt-2 br{
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .personal-info-div{
+        margin: auto;
+        text-align: center;
+        margin-bottom: 50px;
+        width: 450px;
+        border-radius: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 615px) {
+    .personal-info-div{
+        width: 280px;
+    }
+
+    .resume-img {
+        border-radius: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 520px) {
+    .textCenter {
+        text-align: center;
+    }
+    
+    .ol-ulSmall{
+        text-align: start;
+    }
+
+    .resumeSecond-txt-2 span{
+        float: start;
+    }
+    
+    .resumeSecond-txt-2 br{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .resume{
+        padding: 50px 5px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .resume{
+        padding: 50px 0;
+    }
+}
+
+/*Footer*/
+.Footer{
+    width: 100%;
+    height: 350px;
+    background: #222222;
+    padding:  75px 0;
+}
+
+.forHover:hover{
+    color: rgb(163,92,186)!important;
+}
+
+.nameLogo{
+    width: 500px;
+}
+
+@media screen and (max-width: 620px) {
+    .nameLogo{
+        width: 400px;
+    }
+    
+    .footerForSmallGap{
+        gap: 10px!important;
+    }
+    
+}
+
+@media screen and (max-width: 465px) {
+    .nameLogo{
+        width: 300px;
+    }
+    
+}
+
+@media screen and (max-width: 370px) {
+    .nameLogo{
+        width: 250px;
+    }
+    
+    .footerForSmallGap{
+        gap: 5px!important;
+    }
+    
+}
+
+@media screen and (max-width: 335px) {    
+    .footerForSmallGap{
+        gap: 1px!important;
+    }
+    
+}
+
+/* S-media */
+.s-card {
+    display: flex;
+    height: 70px;
+    width: 270px;
+    background: rgb(226, 226, 226);
+    /* background-image: -webkit-linear-gradient(0deg, rgb(50, 36, 176) 0%, rgb(190, 94, 222) 100%); */
+    border-radius: 20px;
+}
+  
+.s-card svg {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    cursor: pointer;
+}
+  
+.s-card .social-link1,.s-card .social-link2,.s-card .social-link3,.s-card .social-link4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+}
+  
+.s-card svg {
+    transform: scale(1);
+}
+  
+.s-card .social-link1:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    animation: bounce_613 0.4s linear;
+}
+  
+.s-card .social-link2:hover {
+    background-color: #00ccff;
+    animation: bounce_613 0.4s linear;
+}
+  
+.s-card .social-link3:hover {
+    background-color: #29d107;
+    animation: bounce_613 0.4s linear;
+}
+  
+.s-card .social-link4:hover {
+    background-color: black;
+    animation: bounce_613 0.4s linear;
+}
+  
+@keyframes bounce_613 {
+    40% {
+      transform: scale(1.4);
+    }
+  
+    60% {
+      transform: scale(0.8);
+    }
+  
+    80% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+}
