@@ -703,6 +703,28 @@ body {
     .card-img {
         width: 288px;
     }
+
+    .text-title {
+        font-size: 18px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .text-title-2 {
+        letter-spacing: 0;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .project-brs{
+        display: none;
+    }
+
+    .card-button {
+        padding: 0.4rem;
+        outline: none;
+        border: none;
+    }
 }
 
 /*Massage*/
