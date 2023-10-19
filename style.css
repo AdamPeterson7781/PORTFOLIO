@@ -39,6 +39,15 @@ body {
 }
 
 /*Navbar*/
+.links-for-small{
+    height: 50px;
+}
+
+#nav-txt-1, #nav-txt-2, #nav-txt-3, #nav-txt, #second-svg{
+    display: none;
+    color: white;
+}
+
 .secondContainer{
     background-image: url(./image/myPhoto.png);
     background-position: center;
@@ -50,26 +59,16 @@ body {
 
 .NavbarName{
     width: 455px;
-    margin: 0 0 0 130px;
+    margin: 5px 0 0 0;
 }
 
-.nav-btn{
+/* .nav-btn{
     border: none;
     background-color: transparent;
 }
 
 .nav-btn svg {
     margin: 0 130px 0 0;
-}
-
-.offcanvas-body{
-    /* background-image: -webkit-linear-gradient(0deg, rgb(136 123 255) 0%, rgb(219 110 255) 100%); */
-
-}
-
-.nav-link{
-    color: #000000;
-
 }
 
 .search-btn {
@@ -79,7 +78,7 @@ body {
 .search-btn:hover{
     color: #000000;
     border: 1px solid #000000;
-} 
+}  */
 
 @media screen and (max-width: 1510px) {
     .secondContainer{
@@ -87,42 +86,42 @@ body {
     } 
 }
 
-@media screen and (max-width: 1400px) {
-    .NavbarName{
-        margin: 0;
-    }
-
-    .nav-btn svg {
-        margin: 0;
-    }
-}
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
     .NavbarName{
         width: 320px;
     }
 }
 
-@media screen and (max-width: 520px){
-.NavbarName {
-    width: 240px;
-}
+@media screen and (max-width: 700px){
+    .NavbarName {
+        width: 300px;
+    }
+
+    .secod_nav_div{
+        flex-direction: column-reverse;
+    }
+
+    .links-for-small{
+        flex-direction: column-reverse;
+        gap: 5px!important;
+        height: 115px;
+    }
 }
 
 @media screen and (max-width: 420px){
-    .NavbarName {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+
+    .secod_nav_div{
+        display: none!important;
     }
 
-    .nav-btn svg {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: 40px 0 0 0;
+    .nav-main-div{
+        justify-content: center!important;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .NavbarName {
+        width: 280px;
     }
 }
 
@@ -135,7 +134,7 @@ body {
     letter-spacing: 3px;
     text-transform: uppercase !important;
     text-align: center;
-    padding: 150px 0 0 0;
+    padding: 100px 0 0 0;
 }
 
 .home-title-2{
@@ -188,11 +187,19 @@ body {
     } 
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 700px) {
+    .home-title-1 {
+        padding: 50px 0 20px 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
     .home-title-1 {
         padding: 150px 0 20px 0;
     }
+}
 
+@media screen and (max-width: 350px) {
     .home-title-2 {
         font-size: 40px;
         padding-bottom:20px;
