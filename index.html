@@ -26,57 +26,35 @@
       <div class="main-container">
         <!-- Navbar and Main-Home -->
         <div class="secondContainer">
+
           <!-- Navbar -->
-          <nav class="navbar bg-body-tertiary ">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="/index.html">
-                <img src="./image/nameLogo.png" class="NavbarName">
-              </a>
-              <button class="nav-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="5l0" fill="white" class="bi bi-list" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                </svg>              
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Shomurotov Otamurod</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#Home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#AboutME">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#Projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#Massage">Contact Me</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Other Pages
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#Skills">Skills</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#Footer">Footer</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn search-btn" type="submit">Search</button>
-                  </form>
-                </div>
+          <nav>
+              <div class="container-fluid">
+                  <div class="d-flex justify-content-between nav-main-div">
+                      <div class="first_nav_div">
+                        <a class="navbar-brand" href="/index.html">
+                          <img src="./image/nameLogo.png" class="NavbarName">
+                        </a>
+                      </div>
+                      <div class="secod_nav_div d-flex gap-3">
+                          <div class="d-flex mt-1 gap-5 links-for-small">
+                              <a href="#Home" class="text-decoration-none"><p id="nav-txt-1">Home</p></a>
+                              <a href="#AboutME" class="text-decoration-none"><p id="nav-txt-2">About Me</p></a>
+                              <a href="#Parallax" class="text-decoration-none"><p id="nav-txt-3">Projets</p></a>
+                          </div>
+                          <div>
+                            <a href="#" onclick="navSvg()" class="nav-svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-list" viewBox="0 0 16 16" id="svg">
+                                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-x" viewBox="0 0 16 16" id="second-svg">
+                                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </a>
+                          </div>
+                      </div>
+                  </div>
               </div>
-            </div>
           </nav>
           <!-- /Navbar -->
 
@@ -186,7 +164,7 @@
             <p class="parallax-txt-1">
               PROJECTS
             </p> <br>
-            <a href="" class="text-decoration-none d-block" style="width: 170px;">
+            <a href="/projects.html" class="text-decoration-none d-block" style="width: 170px;">
               <button class="about-btn">
                 See More
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -279,7 +257,7 @@
           </div>
         </section>
         <!-- /Projects -->
-          
+
         <!-- Massage -->
         <section class="Massage" id="Massage">
           <div class="container-fluid Massage-parallax">
@@ -315,13 +293,13 @@
           <div class="container-fluid">
             <div class="d-flex justify-content-center gap-5 flex-column">
               <div class="d-flex justify-content-center gap-5 footerForSmallGap">
-                <a href="#Home" class="text-decoration-none text-white forHover">Home</a>
+                <a href="/index.html" class="text-decoration-none text-white forHover">Home</a>
                 <a href="" class="text-decoration-none text-white forHover">|</a>
-                <a href="#AboutME" class="text-decoration-none text-white forHover">About Me</a>
+                <a href="/about.html" class="text-decoration-none text-white forHover">About Me</a>
                 <a href="" class="text-decoration-none text-white forHover">|</a>
-                <a href="#Parallax" class="text-decoration-none text-white forHover">Projects</a>
+                <a href="" class="text-decoration-none text-white forHover">Projects</a>
                 <a href="" class="text-decoration-none text-white forHover">|</a>
-                <a href="#Massage" class="text-decoration-none text-white forHover">Contact Me</a>
+                <a href="" class="text-decoration-none text-white forHover">Contact Me</a>
               </div>
 
               <div class="s-card m-auto bg-transparent">
@@ -350,6 +328,6 @@
       </div>
     </div>
 
-    <script src="index.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
