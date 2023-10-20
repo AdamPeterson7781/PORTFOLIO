@@ -380,22 +380,6 @@ body {
     .card-img {
         width: 338px;
     }
-}
-
-@media screen and (max-width: 390px) {
-    #Projects{
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    .card {
-        width: 290px;
-        height: 166px;
-    } 
-  
-    .card-img {
-        width: 288px;
-    }
 
     .text-title {
         font-size: 18px;
@@ -420,6 +404,22 @@ body {
     }
 }
 
+@media screen and (max-width: 390px) {
+    #Projects{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .card {
+        width: 290px;
+        height: 166px;
+    } 
+  
+    .card-img {
+        width: 288px;
+    }
+
+}
 
 /*Footer*/
 .Footer{
