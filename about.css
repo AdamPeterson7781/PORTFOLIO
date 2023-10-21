@@ -345,6 +345,13 @@ body {
     width: 500px;
 }
 
+.footer-arrow-2 {
+    width: 260px;
+    height: 45px;
+    margin: -37px -121px 0 -265px;
+    display: none;
+}
+
 @media screen and (max-width: 620px) {
     .nameLogo{
         width: 400px;
@@ -354,8 +361,6 @@ body {
         gap: 10px!important;
     }
     
-}
-
 @media screen and (max-width: 465px) {
     .nameLogo{
         width: 300px;
