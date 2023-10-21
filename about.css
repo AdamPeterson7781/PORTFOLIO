@@ -273,6 +273,14 @@ body {
     display: none;
 }
 
+.resume-btn{
+    width: 150px;
+    height: 50px;
+    margin: 20px 0 0 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
 @media screen and (max-width: 1199px) {
     .personal-info-div{
         margin: auto;
@@ -322,6 +330,13 @@ body {
 @media screen and (max-width: 450px) {
     .resume{
         padding: 50px 5px;
+    }
+    
+    .resume-btn {
+        margin: 50px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
