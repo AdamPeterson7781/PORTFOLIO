@@ -444,6 +444,9 @@ body {
     display: none;
 }
 
+.footerForSmallGap{
+    gap: 50px!important;
+}
 
 @media screen and (max-width: 620px) {
     .nameLogo{
@@ -469,12 +472,12 @@ body {
     }
     
     .footerForSmallGap{
-        gap: 5px!important;
+        gap: 2px!important;
     }
     
 }
 
-@media screen and (max-width: 335px) {    
+@media screen and (max-width: 345px) {
     .footerForSmallGap{
         gap: 1px!important;
     }
