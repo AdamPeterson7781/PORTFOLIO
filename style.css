@@ -953,9 +953,6 @@ body {
     }
 }
 
-
-
-
 /*Footer*/
 .Footer{
     width: 100%;
@@ -977,6 +974,10 @@ body {
     height: 45px;
     margin: -37px -121px 0 -265px;
     display: none;
+}
+
+.footerForSmallGap{
+    gap: 50px!important;
 }
 
 @media screen and (max-width: 620px) {
@@ -1003,13 +1004,12 @@ body {
     }
     
     .footerForSmallGap{
-        gap: 5px!important;
+        gap: 2px!important;
     }
     
 }
 
-
-@media screen and (max-width: 335px) {    
+@media screen and (max-width: 345px) {
     .footerForSmallGap{
         gap: 1px!important;
     }
