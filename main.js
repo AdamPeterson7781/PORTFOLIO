@@ -4,7 +4,6 @@ let secondSvg = document.querySelector('#second-svg');
 let navTxt1 = document.querySelector('#nav-txt-1');
 let navTxt2 = document.querySelector('#nav-txt-2');
 let navTxt3 = document.querySelector('#nav-txt-3');
-let button = document.getElementById("showButton");
 
 let isNavVisible = false;
 
@@ -27,14 +26,3 @@ function navSvg() {
   isNavVisible = !isNavVisible; // Toggle the flag
 }
 navSvgIcon.addEventListener("click", toggleNav);
-
-
-function toggleImage() {
-  let arrowImage = document.getElementById("arrow-image-2");
-  if (arrowImage.style.display === "none") {
-    arrowImage.style.display = "block";
-  } else {
-    arrowImage.style.display = "none";
-  }
-}
-button.addEventListener("click", toggleImage);
