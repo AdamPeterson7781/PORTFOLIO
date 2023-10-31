@@ -395,6 +395,15 @@ body {
         margin: 50px auto auto auto;
         display: flex;
     }
+
+    .carousel-control-prev-icon {
+        display: none;
+    }
+    
+    .carousel-control-next-icon {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
