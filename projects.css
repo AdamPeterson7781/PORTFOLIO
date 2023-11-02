@@ -448,13 +448,16 @@ body {
     gap: 50px!important;
 }
 
+@media screen and (max-width: 680px) {
+    .footerForSmallGap{
+        gap: 10px!important;
+    }
+    
+}
+
 @media screen and (max-width: 620px) {
     .nameLogo{
         width: 400px;
-    }
-    
-    .footerForSmallGap{
-        gap: 10px!important;
     }
     
 }
@@ -472,7 +475,7 @@ body {
     }
     
     .footerForSmallGap{
-        gap: 2px!important;
+        gap: 3px!important;
     }
     
 }
@@ -563,5 +566,107 @@ body {
   
     100% {
       transform: scale(1);
+    }
+}
+
+/*Parallax*/
+.parallax {
+    /* The image used */
+    background-image: url(./image/parallax-img.jpg);
+  
+    /* Full height */
+    height: 180px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-txt-1{
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    font-weight:500;
+    line-height: 1.25em;
+    color: #fff;
+    text-align: center;
+}
+
+.parallax-btn{
+    width: 170px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-image: -webkit-linear-gradient(0deg, rgb(50, 36, 176) 0%, rgb(190, 94, 222) 100%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 450px) { 
+    .parallax-txt-1{
+        font-size: 40px;
+    }
+}
+
+/* JS Projects */
+.js-projects{
+    padding: 80px;
+    background: #fff;
+}
+
+.js-card{
+    width: 400px;
+    height: auto;
+    background: #fff;
+    box-shadow: 0px 7px 20px rgb(50, 36, 176);
+    border-radius: 20px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.js-card:hover{
+    box-shadow: 0px 10px 30px rgb(50, 36, 176);
+}
+
+.js-img{
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+
+.js-txt-1{
+    font-size: 21px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    padding-top: 15px;
+}
+
+.ul{
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+}
+
+.js-button{
+    padding: 0.6rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(0deg, rgb(50, 36, 176) 0%, rgb(190, 94, 222) 100%);
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 450px) {
+    .js-projects{
+        padding: 10px;
+        background: #fff;
     }
 }
